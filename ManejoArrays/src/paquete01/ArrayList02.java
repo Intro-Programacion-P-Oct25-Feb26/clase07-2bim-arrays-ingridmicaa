@@ -32,8 +32,10 @@ public class ArrayList02 {
         while (bandera) {
             System.out.println("Ingrese un nombre de un país");
             pais = entrada.nextLine(); // Ecuador / ecuador / ECuador
+            
             pais = convertirMayusculas(pais);
-            arreglo2.add(pais);
+            arreglo2.add(pais); // creando nuevo tamaño es decir posicion
+            
             System.out.println("Desea ingresar salir, ingrese (s)");
             opcion = entrada.nextLine();
             if (opcion.equals("s")) {
